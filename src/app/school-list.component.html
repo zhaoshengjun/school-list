@@ -1,42 +1,16 @@
-<md-sidenav-layout fullscreen>
-  <md-sidenav #sidenav>
-    <md-nav-list>
-      <a md-list-item *ngFor="let view of views">
-        <md-icon md-list-item>{{view.icon}}</md-icon>
-        <span md-line>{{view.name}}</span>
-        <span md-line class="secondary">{{view.description}}</span>
-      </a>
-    </md-nav-list>
-  </md-sidenav>
-
-  <md-toolbar color="primary">
-    <button md-icon-button (click)="sidenav.open()">
-      <md-icon>menu</md-icon>  
-    </button> School List
-  </md-toolbar>
-
-  <div class="card-container">
-    <md-list>
-      <h3 md-subheader>College</h3>
-      <md-list-item *ngFor="let school of schools">
-        <img md-list-avatar src="../images/{{school.image}}.png" [alt]="school.name">
-        <h3 md-line> {{school.name}} </h3>
-        <h4 md-line> {{school.location}}</h4>
-        <h5 md-line><span class="tag">{{school.types}}</span> <span class="tag">{{school.years}}</span></h5>   
-        <md-divider></md-divider>
-      </md-list-item>
-      
-    </md-list>
-    <!--<md-card *ngFor="let school of schools" >
-      <img class="school-image"[alt]="school.name" src="../images/{{school.image}}.png">
-      <md-card-title>{{school.name}}</md-card-title>
-      <md-card-content>{{school.location}}</md-card-content>
-      <md-card-content>{{school.types}}</md-card-content>
-      <md-card-content>{{school.years}}</md-card-content>
-      <md-card-actions align="end">
-        <button md-button color="primary">Like</button>
-        <button md-button color="primary">Not Like</button>
-      </md-card-actions>
-    </md-card>      -->
-  </div>
-</md-sidenav-layout>
+<ul class="collection">
+  <li class="collection-item avatar" *ngFor="let school of schools">
+    <img src="../images/{{school.image}}.png" [alt]="school.name" class="circle">
+    <span class="title">{{school.name}}</span>
+    <p>
+      {{school.location}}
+      <br>
+      <span class="tag">{{school.types}} </span>
+      <br>
+      <span class="tag">{{school.years}}</span>
+    </p>
+    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+      <i class="material-icons right">send</i>
+    </button>
+  </li>
+</ul>
