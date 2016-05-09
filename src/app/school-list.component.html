@@ -5,54 +5,38 @@
         <md-icon md-list-item>{{view.icon}}</md-icon>
         <span md-line>{{view.name}}</span>
         <span md-line class="secondary">{{view.description}}</span>
-      </a>  
+      </a>
     </md-nav-list>
   </md-sidenav>
-  
+
   <md-toolbar color="primary">
     <button md-icon-button (click)="sidenav.open()">
       <md-icon>menu</md-icon>  
-    </button>   
-    School List
-    <button md-fab (click)="formShowing=!formShowing">
-      <md-icon>add</md-icon>
-    </button>
+    </button> School List
   </md-toolbar>
-  
-  <div class="form" *ngIf="formShowing" >
-    <md-card>
-      <md-card-title>Create your dogs's profile</md-card-title>
-      <md-card-content>
-        <form action="">
-          <md-input placeholder="Name"></md-input>
-          <md-input placeholder="Favorite toy"></md-input>
-          <md-input placeholder="Description"></md-input>
-          <md-raido-group>
-            <md-radio-button value="Looking for love">Looking for love</md-radio-button>
-            <md-radio-button value="Just browsing">Just browsing</md-radio-button>
-          </md-raido-group>
-          <div>
-            <md-checkbox indeterminate="true">Is a good dog</md-checkbox>
-          </div>
-        </form>
-      </md-card-content>
-      <md-card-actions align="end">
-        <button md-raised-button color="accent">POST</button>  
-      </md-card-actions>
-    </md-card>
-  </div>
-  
+
   <div class="card-container">
-    <md-card *ngFor="let dog of dogs" >
-      <img md-card-image [alt]="dog.name" >
-      <md-card-title>{{dog.name}}</md-card-title>
-      <md-card-content>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum nam recusandae cumque maiores, sunt id, voluptas dolor iste debitis quos.</md-card-content>
+    <md-list>
+      <h3 md-subheader>College</h3>
+      <md-list-item *ngFor="let school of schools">
+        <img md-list-avatar src="../images/{{school.image}}.png" [alt]="school.name">
+        <h3 md-line> {{school.name}} </h3>
+        <h4 md-line> {{school.location}}</h4>
+        <h5 md-line><span class="tag">{{school.types}}</span> <span class="tag">{{school.years}}</span></h5>
+        <div class="divider"></div>
+      </md-list-item>
+      
+    </md-list>
+    <!--<md-card *ngFor="let school of schools" >
+      <img class="school-image"[alt]="school.name" src="../images/{{school.image}}.png">
+      <md-card-title>{{school.name}}</md-card-title>
+      <md-card-content>{{school.location}}</md-card-content>
+      <md-card-content>{{school.types}}</md-card-content>
+      <md-card-content>{{school.years}}</md-card-content>
       <md-card-actions align="end">
-        <button md-button color="primary">SNIFF</button>
-        <button md-button color="primary">WOOF</button>
+        <button md-button color="primary">Like</button>
+        <button md-button color="primary">Not Like</button>
       </md-card-actions>
-    </md-card> 
-     
-  </div>  
-  
+    </md-card>      -->
+  </div>
 </md-sidenav-layout>

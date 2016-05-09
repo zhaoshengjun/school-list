@@ -1,0 +1,59 @@
+[
+  {
+    "id": 1,
+    "name": "Harvard University",
+    "image":"Harvard_University",
+    "location": "Cambridge, Massachusetts",
+    "types": "Private Not-For-Profit",
+    "years": "4 Year College"
+  },
+  {
+    "id": 2,
+    "name": "Princeton University",
+    "location": "Princeton, New Jersey",
+    "types": "Private Not-For-Profit",
+    "years": "4 Year College"
+  },
+  {
+    "id": 3,
+    "name": "Yale University",
+    "location": "New Haven, Connecticut",
+    "types": "Private Not-For-Profit",
+    "years": "4 Year College"
+  },
+  {
+    "id": 4,
+    "name": "Massachusetts Institute of Technology	",
+    "location": "Cambridge, Massachusetts",
+    "types": "Private Not-For-Profit",
+    "years": "4 Year College"
+  },
+  {
+    "id": 5,
+    "name": "Stanford University",
+    "location": "Stanford, California",
+    "types": "Private Not-For-Profit",
+    "years": "4 Year College"
+  },
+  {
+    "id": 6,
+    "name": "California Institute of Technology	",
+    "location": "Pasadena, California",
+    "types": "Private Not-For-Profit",
+    "years": "4 Year College"
+  },
+  {
+    "id": 7,
+    "name": "Columbia University in the City of New York",
+    "location": "New York, New York",
+    "types": "Private Not-For-Profit",
+    "years": "4 Year College"
+  },
+  {
+    "id": 8,
+    "name": "Pomona College",
+    "location": "Claremont, California",
+    "types": "Private Not-For-Profit",
+    "years": "4 Year College"
+  }
+]

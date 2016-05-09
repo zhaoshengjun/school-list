@@ -1,6 +1,7 @@
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(255,255,255,0.3)
 }
 
 .secondary {
@@ -42,4 +43,16 @@ md-radio-button, md-checkbox{
   right: 3%;
   top: 34px;
   z-index: 1;
+}
+.divider {
+  border-bottom: 1px solid black;
+}
+.tag {
+    border-radius: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border: 1px solid black;
+    background-color: green;
+    color: white;
+    height: 6px;
 }
