@@ -33,12 +33,17 @@ import { HTTP_PROVIDERS } from '@angular/http';
 })
 export class SchoolListAppComponent {
   schools: Object[];
+  views: Object[];
 
   constructor() {
 
   }
 
   ngOnInit() {
+    this.views = [
+      {name:"Login"},
+      {name:"Register"},
+    ];
     this.schools = [
       {
         "id": 1,
